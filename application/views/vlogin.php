@@ -74,7 +74,7 @@
 
     <a href="#">Olvidé mi password</a><br>
     <a href="register.html" class="text-center">Registrar un nuevo usuario</a><br>
-	<label class="text text-danger"><?php echo $mensaje; ?> <i class="fa fa-times"></i> </label>  
+	<label class="text text-danger"><?php echo $mensaje; ?> </label>  
   </div>
   <!-- /.login-box-body -->
 </div>

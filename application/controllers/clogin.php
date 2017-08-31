@@ -26,7 +26,13 @@ class cLogin extends CI_Controller
 
 		if ($res==1) {
 			# code...
+			//antes de plantilla bootstrap
+			//$this->load->view('persona/vupdpersona');
+			//con plantilla botstrap
+			$this->load->view('layout/header');
+			$this->load->view('layout/menu');
 			$this->load->view('persona/vupdpersona');
+			$this->load->view('layout/footer');
 		}else{
 			$data['mensaje']="Usuario o contraseña erronea";
 			$this->load->view('vlogin',$data);
