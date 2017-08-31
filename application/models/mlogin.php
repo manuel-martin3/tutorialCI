@@ -26,7 +26,8 @@ class mLogin extends CI_Model
 			$s_usuario = array(
 				's_idPersona' => $r->idPersona,
 				's_idUsuario' => $r->idUsuario,
-				's_usuario' => $r->nombre.",".$r->appaterno.",".$r->apmaterno
+				's_usuario' => $r->nombre.",".$r->appaterno." ".$r->apmaterno,
+				's_user' => $r->nombre." ".$r->appaterno
 				);
 
 			$this->session->set_userdata($s_usuario);
