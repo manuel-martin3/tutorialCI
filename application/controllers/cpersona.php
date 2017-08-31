@@ -1,7 +1,7 @@
 <?php 	
 
 /**
-* 
+* clase controlador persona
 */
 class cpersona extends CI_Controller
 {

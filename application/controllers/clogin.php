@@ -1,6 +1,6 @@
 <?php 
 /**
-* clase controlador
+* clase controlador login
 */
 class cLogin extends CI_Controller
 {
