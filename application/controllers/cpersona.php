@@ -15,7 +15,11 @@ class cpersona extends CI_Controller
 	}
 
 	public function index(){
+		//implementado Bootstrap
+		$this->load->view('layout/header');
+		$this->load->view('layout/menu');
 		$this->load->view('persona/vpersona');
+		$this->load->view('layout/footer');
 	}
 
 	public function guardar(){
@@ -60,6 +64,11 @@ class cpersona extends CI_Controller
 	$this->musuario->eliminarUsuario($idp);
 	$this->mpersona->eliminarPersona($idp);
 	
+	}
+
+	public function getPersona(){
+		echo json_encode($this->mpersona->getPersona());
+
 	}
 
 }

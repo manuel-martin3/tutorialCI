@@ -48,8 +48,16 @@ class mPersona extends CI_Model
 		//forma 2 de eliminar registro
 		// $this->db->where('idPersona',$idp);
 		// $this->db->delete('persona');
+	}
 
+	public function getPersona(){
+		$this->db->select('p.nombre,p.appaterno,p.apmaterno,p.dni,c.ciudad');
+		$this->db->from('persona p');
+		$this->db->join('ciudades c', 'c.idCiudad = p.idCiudad');
 
+		$r=$this->db->get();
+
+		return $r->result();
 	}
 
 }

@@ -3,7 +3,7 @@
 	<!-- Horizontal Form -->
 	<div class="box box-info">
 	<div class="box-header with-border">
-	  <h3 class="box-title"><?php echo "Usuario: ".$this->session->userdata('s_usuario');?></h3>
+	  <h3 class="box-title">cargo persona</h3>
 	</div>
 	<!-- /.box-header -->
 	<!-- form start -->
